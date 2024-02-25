@@ -1,0 +1,56 @@
+@import url("./Libs/Bootstrap.css");
+@import url("./Libs/Animations.css");
+
+img {
+    width: 100% ;
+    height: 100% ;
+}
+.display-none {
+    display: none;
+}
+.box {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 32px ;
+    border-bottom: 2px solid #eee;
+}
+.image-box {
+    height: 555px;
+}
+.box:last-child {
+    margin-bottom: unset;
+    padding-bottom: 24px;
+}
+.closeElement {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background-color:rgb(250, 33, 33);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    opacity: 0.6;
+    transition: opacity 300ms ease-in;
+    cursor: pointer;
+}
+
+.box:hover .closeElement {
+    opacity: 1;
+}
+.image-box .closeElement{
+    bottom: 35px ;
+}
+.closeElement i.close-icon {
+    font-size: 16px;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    opacity: 0.7;
+    transition: opacity 150ms ease-in 301ms;
+}
+.box:hover .closeElement i.close-icon {
+    opacity: 1;
+}
